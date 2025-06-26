@@ -1,26 +1,226 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Humans Prime – Keeping Humans in Control</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humans Prime&trade; PBC - Human Control First</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+        h1, h2 {
+            color: #1a2a4d; /* Dark Blue */
+        }
+
+        /* Header */
+        header {
+            background: #fff;
+            padding: 1rem 0;
+            border-bottom: 1px solid #ddd;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #logo img {
+            height: 70px; /* Logo size increased */
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav li {
+            margin-left: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: #1a2a4d;
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Content Sections */
+        .section {
+            padding: 40px 0;
+            text-align: center;
+        }
+        .section-light {
+            background: #fff;
+        }
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+        
+        /* Product Section */
+        #product .product-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            text-align: left;
+        }
+        #product img {
+            max-height: 250px;
+        }
+
+        /* Why It Matters Section */
+        .features {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .feature-item {
+            flex: 1;
+            background: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .feature-item h3 {
+            color: #d9242b; /* ARK Red */
+        }
+
+        /* Contact Section */
+        #contact {
+            background: #333;
+            color: #fff;
+            padding: 40px 0;
+        }
+        #contact h2 {
+            color: #fff;
+        }
+        #contact a {
+            color: #d9242b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1a2a4d;
+            color: #fff;
+        }
+
+        /* Responsive */
+        @media(max-width: 768px) {
+            header .container { flex-direction: column; gap: 10px; }
+            .hero h1 { font-size: 2rem; }
+            #product .product-content { flex-direction: column; }
+            .features { flex-direction: column; }
+        }
+
+    </style>
 </head>
 <body>
-  <header class="hero">
-    <h1>Putting Humans Firmly in Charge</h1>
-    <p>In an increasingly automated world, Humans Prime™ PBC ensures human safety and trust in autonomous technology.</p>
-  </header>
 
-  <main class="section">
-    <h2>The ARK Switch™</h2>
-    <img src="ark_switch_logo_2.png" alt="ARK Switch Logo" style="max-height: 200px;" />
-    <p>A physical, tamper-resistant shutdown device for robots and autonomous machines.</p>
-  </main>
+    <header>
+        <div class="container">
+            <a href="#" id="logo"><img src="Humans_Prime_Logo.png" alt="Humans Prime PBC Logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <footer class="section">
-    <p>Contact us: info@humansprime.com | © 2025 Humans Prime™ PBC</p>
-  </footer>
+    <section class="hero">
+        <h1>Putting Humans Firmly in Charge</h1>
+        <p>In an increasingly automated world, Humans Prime&trade; PBC was founded to ensure human safety and maintain public trust in autonomous technology.</p>
+    </section>
+
+    <section id="about" class="container section">
+        <h2>A New Standard in Robotic Safety</h2>
+        <p style="max-width: 800px; margin: 0 auto;">Humans Prime&trade; is a Public Benefit Corporation committed to human oversight in robotics. Our founding team brings decades of real-world experience from designing and manufacturing master switches and critical components for high-stakes robotics since 2001. This deep expertise in fail-safe systems uniquely positions us to address the safety challenges of tomorrow.</p>
+    </section>
+
+    <section id="product" class="section section-light">
+        <div class="container">
+            <h2>Introducing Our First Product</h2>
+            <div class="product-content">
+                <img src="ark_switch_logo_2.png" alt="ARK Switch Logo">
+                <div>
+                    <h3>The ARK Switch&trade; (Patent Pending)</h3>
+                    <p>The Autonomous Robot Kill Switch (ARK Switch&trade;) is a groundbreaking, standalone safety module designed to empower any human with immediate, decisive control over any AI-powered machine.</p>
+                    <p>It provides a universal, independent override that physically cuts main power in a single action, operating entirely separate from the robot's internal software. The ARK Switch&trade; is a direct response to the critical need for a human-centric failsafe in the age of automation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why" class="container section">
+        <h2>Why It's Essential</h2>
+        <div class="features">
+            <div class="feature-item">
+                <h3>Human Control First</h3>
+                <p>It reasserts human primacy in environments shared with AI-powered machines, ensuring safety remains paramount.</p>
+            </div>
+            <div class="feature-item">
+                <h3>A Universal Procedure</h3>
+                <p>It provides one common, intuitive interface, eliminating the need to learn complex shutdown procedures for different machines.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Boosts Public Trust</h3>
+                <p>A visible, independent safeguard fosters greater public confidence in the deployment of autonomous technologies.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Pioneering a Safer Future</h2>
+            <p>The ARK Switch&trade; is currently in development. If you are interested in learning more about our technology or exploring partnership opportunities, please contact us.</p>
+            <p>
+                Email: <a href="mailto:info@humansprime.com">info@humansprime.com</a> | Phone: <a href="tel:715-654-5000">715-654-5000</a>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Humans Prime&trade; PBC. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
