@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Humans Prime&trade; PBC</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+        h1, h2, h3 {
+            color: #1a2a4d; /* Dark Blue */
+        }
+        p {
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Header */
+        header {
+            background: #fff;
+            padding: 1rem 0;
+            border-bottom: 1px solid #ddd;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #logo img {
+            height: 85px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav li {
+            margin-left: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        /* Style for active page link */
+        nav a.active {
+            color: #d9242b; /* ARK Red */
+            border-bottom: 2px solid #d9242b;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: #1a2a4d;
+            color: #fff;
+            padding: 36px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        /* Content Sections */
+        .section {
+            padding: 40px 0;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+        .section-light {
+            background-color: #fff;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1a2a4d;
+            color: #fff;
+        }
+        .footer-address {
+            margin-top: 5px;
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+
+        /* Responsive */
+        @media(max-width: 768px) {
+            header .container { flex-direction: column; gap: 10px; }
+            .hero h1 { font-size: 2rem; }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" id="logo"><img src="Humans_Prime_Logo.png" alt="Humans Prime PBC Logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>About Humans Prime&trade;</h1>
+    </section>
+
+    <section class="section section-light">
+        <div class="container">
+            <h2>Our Mission</h2>
+            <p>The protection and advancement of human welfare by researching, developing, and distributing technologies and standards that ensure autonomous robots and artificial-intelligence systems operate under human control and prioritize human safety, dignity, and well-being.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Decades of Robotics Expertise</h2>
+            <p>Humans Prime&trade; PBC, founded in 2025, brings together a team with unparalleled, real-world experience in robotics safety and control systems. The founders have been at the forefront of designing and manufacturing master switches and other critical components for lethal fighting robots since 2001 through their Team Whyachi Robotics brand.</p>
+            <p>This extensive background in high-stakes, high-performance robotics has instilled a deep understanding of fail-safe systems and the absolute necessity of robust human control. Furthermore, the founding team has a long-standing history of collaboration with leading humanoid robotics companies, manufacturing precision parts for over a decade. This intimate knowledge of advanced autonomous systems, combined with a combat robotics heritage, uniquely positions Humans Prime&trade; PBC to address the evolving safety challenges in the rapidly expanding world of AI-powered machines.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Humans Prime&trade; PBC. All Rights Reserved.</p>
+        <p class="footer-address">660 E. 1st. Ave., Dorchester WI 54425</p>
+    </footer>
+
+</body>
+</html>
